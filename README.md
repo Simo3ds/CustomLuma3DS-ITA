@@ -1,6 +1,11 @@
 # CustomLuma3DS
 *Noob-proof (N)3DS "Custom Firmware"*
 
+# 
+
+twl redirection to sd patch:
+https://github.com/Alexyo21/twl_firm_patcher
+
 Rosalina with streams capabilities here addon for my fork:
  https://github.com/Alexyo21/Streaming-Rosalina
 
@@ -10,34 +15,34 @@ https://nightly.link/Alexyo21/CustomLuma3DS/workflows/build/master/CustomLuma3DS
 discord group in case of needing:
 https://discord.com/invite/qR2D3dq43b
 
-## next update 
-next build probably will:
-
 for a traslated fork in italian here you go (thanks to Simo):
 
 (per una fork tradotta in italiano, ecco il link (grazie a Simo):
 https://github.com/Simo3ds/CustomLuma3DS-ITA
 
+#
+
+## next update
+
 * custom cid patch for process9(new testing)
-
-* still looking for cfg:nor so you can also boot 3ds without nvram, wifi also will not work
-
-* also screenshot improving... 
 
 and Next time again:
 
 *  nighshift remake;
 * gateway sysnand support🤔
+* also screenshot improving...
 
 (little feature)/(improvements):
-* make extra config menu work also on nand;
 * add cool patch like mcu bricker for notification led;
 
+#
 
 twl patch redirection aside
 there are two  standalone version one stable with more feature, including the one to sd card, and one for now that has one feature which the redirection to sd this only,choose the you want, these can be used alone or alongside the with the emunand patch itself, for theoretically not use the nand at all, if you want to help join the group or if you need support with some error). thanks for the attention 
 
-https://github.com/Alexyo21/twl_firm_patcher
+PS. if you have broken nand you need to use it with ntrboot, and put the officials firms files on sd, /luma folder, and have an emunand, obviously weth boot.firm on the sd root.
+
+#
 
 the release build are not synced with the latest commit so if you want to see the latest changes you know how to do it
 
@@ -57,7 +62,7 @@ Some of the code is inspired by NTR but most of it is a complete reimplementatio
     Added shortcuts:
         Press start + select to toggle bottom screen (nice when you watch videos) inspired by This, limit on o2ds
         , cause hardware register for up and down lcd are the same looking for new test though... 
-        Press A + B + X + Y + Start to instantly reboot the console. Useful in case of freeze, but don't complain if your sdcard get corrupted because of this. also this needs to be activated 
+        Press A + B + X + Y + Start to instantly reboot the console. Useful in case of freeze, but don't complain if your sdcard get corrupted because of this. also this needs to be activated in the hidden conf.(lumae.ini) also enabling ignore err disp will make your console ignore some hardware error be careful your hardware is still damaged... also for new3ds you should enable the rosalina susmodule in safe firm in hidden conf menu.
         Press Start on Rosalina menu to toggle wifi -> From here
         Press Select on Rosalina menu to toggle LEDs -> From this (and press Y to force blue led as a workaround when the battery is low)
     Added n3ds clock + L2 status in rosalina menu -> From here
@@ -69,7 +74,9 @@ Some of the code is inspired by NTR but most of it is a complete reimplementatio
     Added permanent brightness calibration by Nutez -> From here
     Changed colors on config menu because why not
     Continue running after a errdisp error happens (you can press the instant reboot combo to reboot if nothing works needs to be activated in adavnced menu config.
-    and new3ds title configurator so you can chose which game
+    
+-and new3ds title configurator so you can chose which game
+
     extra config menu also changeable from godmode9 if you need to deactivate a feature.
 - twl patch for emunand
 
@@ -77,7 +84,7 @@ Some of the code is inspired by NTR but most of it is a complete reimplementatio
   
 - update feature disable using /luma/noupdate.txt at least one byte.
   
-- cid and otp(mainly for antiban) custom loading (/luma/otp.bin and /luma/nand_cid.bin) and also option to use another nand backup and also for using only emunand without sysnand(option hidden inside luma config.ini)
+- cid and otp(mainly for antiban) custom loading (/luma/otp.bin and /luma/nand_cid.bin) and also option to use another nand backup and also for using only emunand without sysnand(option hidden inside luma lumae.ini)
 
 - standby light turning off if you want
 
@@ -89,7 +96,7 @@ Some of the code is inspired by NTR but most of it is a complete reimplementatio
 
 - also added single screen backlight regulation
 
-- changed rosalina combo defsult is L+Up (Dpad),instead release L+Down+Select you can change it after in the config menu.(less buttons to be pressed, useful for broken buttons)
+- changed rosalina combo default is L+Up (Dpad) in debug version ,instead release L+Down+Select you can change it after in the config menu.(less buttons to be pressed, useful for broken buttons)
 
 - added logo.bin abilities to replace default 3ds app launch logo try it if you want.
 
