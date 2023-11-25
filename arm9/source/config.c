@@ -851,7 +851,7 @@ void configMenu(bool oldPinStatus, u32 oldPinMode)
                                                "( ) Mostra schermo avvio GBA negli AGB_FIRM patchati",
                                                "( ) Abilita filtri pers. di upscaling per DSi",
                                                "( ) Ammetti combo Sin+D/Su+Giu per DSi",
-                                               "( ) Togli il wifi 3DS in modalita riposo",
+                                               "( ) Interrompi il wifi del 3DS in modalita riposo",
                                                "( ) Imposta UNITINFO come svilup.",
                                                "( ) Disabilita gli Arm11 exception handlers",                                               
                                                "( ) Abilita Rosalina nel SAFE_FIRM",
